@@ -1,0 +1,11 @@
+# Script for the Demo
+cd demo4
+eb init -p PHP
+ls
+pwd
+eb init -p PHP $ echo "Hello World" > index.html
+echo "Hello World" > index.html
+eb create dev-env
+eb open
+ab -n 10000 -c 10 http://dev-env.7urdq3krte.us-east-1.elasticbeanstalk.com/
+eb terminate
